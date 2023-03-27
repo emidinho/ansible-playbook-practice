@@ -1,0 +1,11 @@
+---
+- name: Update web servers
+  hosts: webservers
+  become: true
+
+  tasks:
+  - name: creating user 
+    ansible.builtin.user:
+      name: sakura
+      comment: newbie
+      password: sakura123

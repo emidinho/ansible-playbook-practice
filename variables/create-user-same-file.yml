@@ -1,0 +1,12 @@
+---
+- name: Update web servers
+  hosts: webservers:appserver
+  become: true
+  vars: 
+    user: james
+
+  tasks:
+  - name: creating user 
+    ansible.builtin.user:
+      name: "{{user}}"
+      comment: don de don

@@ -1,0 +1,12 @@
+ansible-vault create create-user.yml
+
+ansible-vault view create-user.yml
+
+ansible-vault edit create-user.yml
+
+ansible-vault decrypt create-user.yml
+
+ansible-vault encrypt create-user.yml
+
+ansible-playbook create-user.yml --ask-vault-pass (to run encrypted file)
+

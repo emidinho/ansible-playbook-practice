@@ -1,0 +1,10 @@
+---
+- name: Update web servers
+  hosts: webservers:&appservers
+  become: true
+
+  tasks:
+  - name: creating user emidio-11
+    ansible.builtin.user:
+      name: emidio-11
+      comment: emi-11
